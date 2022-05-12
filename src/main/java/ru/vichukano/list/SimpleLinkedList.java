@@ -5,7 +5,9 @@ public class SimpleLinkedList {
     Node head;
 
     public SimpleLinkedList(int size) {
-        if (size <= 0) throw new IllegalArgumentException("Size should be greater then 0, size = " + size);
+        if (size <= 0) {
+            throw new IllegalArgumentException("Size should be greater then 0, size = " + size);
+        }
         this.size = size;
         head = new Node(0);
         Node curr = head;
@@ -39,6 +41,5 @@ public class SimpleLinkedList {
         public Node(Integer value) {
             this.value = value;
         }
-
     }
 }
